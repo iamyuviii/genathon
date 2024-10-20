@@ -1,0 +1,138 @@
+.dashboard {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .heading {
+    color: #2d3748;
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+  }
+  
+  .card {
+    background-color: white;
+    border-radius: 0.5rem;
+    padding: 1.5rem;
+    
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card-title {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #4a5568;
+    margin-bottom: 0.5rem;
+  }
+  
+  .card-value {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #2b6cb0;
+  }
+  
+  .graph-container {
+    height: 300px;
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+  }
+  
+  .calls-by-type {
+    background-color: #fff; 
+    border-radius: 0.75rem; 
+    padding: 1.5rem; 
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.08); 
+    transition: box-shadow 0.3s ease-in-out; 
+}
+
+.calls-by-type:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15); 
+}
+
+.calls-by-type-title {
+    font-size: 1.5rem; 
+    font-weight: 700; 
+    color: #2d3748; 
+    margin-bottom: 1.25rem; 
+}
+
+.calls-by-type-list {
+    list-style-type: none; 
+    padding: 0;
+    margin: 0;
+}
+
+.calls-by-type-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 0; 
+    border-bottom: 1px solid #e2e8f0; 
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.calls-by-type-item:hover {
+    background-color: #f7fafc; 
+}
+
+.calls-by-type-item-name {
+    font-weight: 600; 
+    color: #2d3748;
+}
+
+.calls-by-type-item-value {
+    font-weight: 500; 
+    color: #3182ce; 
+}
+
+.calls-by-type-item .calls-by-type-item-name,
+.calls-by-type-item .calls-by-type-item-value {
+    display: inline-block;
+    flex: 1; 
+    padding: 0.25rem 0;
+}
+
+.calls-by-type-item .calls-by-type-item-value {
+    text-align: right; 
+}
+
+
+  
+  /* Call Details Section */
+  .call-details {
+    margin-top: 2rem;
+    background-color: #f7fafc;
+    border-radius: 0.5rem;
+    padding: 1.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .call-details-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+  
+  .call-transcript,
+  .call-summary,
+  .call-sentiment {
+    margin-bottom: 0.5rem;
+  }
+  
+  .call-transcript strong,
+  .call-summary strong,
+  .call-sentiment strong {
+    color: #2d3748;
+  }
+  
